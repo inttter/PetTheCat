@@ -11,8 +11,21 @@ body {
     text-align: center;
   }
   
-  #catImage {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-  }
+.fa-brands fa-github fa-2xs {
+  color: white
+}
+  
+.github-link {
+  position: fixed;
+  bottom: 20px; /* How far from the bottom */
+  right: 20px; /* How far from the right */
+  color: white; /* Sets the colour of the github logo */
+}
+
+.secret-play-button {
+  position: fixed;
+  bottom: 20px; /* How far from the bottom */
+  left: 20px; /* How far from the left */
+  color: black; /* Sets the colour of the secret button to black */
+  font-size: 24px; /* The font size of the secret button */
+}
