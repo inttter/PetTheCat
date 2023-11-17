@@ -1,34 +1,27 @@
-const catImages = [
-  'catImages/cat1.png',
-  'catImages/cat2.png',
-  'catImages/cat3.png',
-  'catImages/cat4.png',
-  'catImages/cat5.png',
-  // Add more images with correct relative paths
-];
-
 const catImage = document.getElementById('catImage');
 const meowSound = document.getElementById('meowSound');
+const audioPlayer = document.getElementById('audioPlayer'); // Moved audio player selection outside of event listener
 
 function getRandomCatImage() {
-  fetch('https://api.thecatapi.com/v1/images/search')
+  return fetch('https://api.thecatapi.com/v1/images/search')
     .then(response => response.json())
     .then(data => {
       const imageUrl = data[0].url;
-      const img = new Image();
-      img.onload = function() {
-        catImage.src = imageUrl;
-      };
-      img.src = imageUrl;
+      return imageUrl; // Return the image URL
     })
     .catch(error => {
       console.error('Error fetching cat image:', error);
+      return null;
     });
 }
 
 function setRandomCatImage() {
-  const randomCatImage = getRandomCatImage();
-  catImage.src = randomCatImage;
+  getRandomCatImage()
+    .then(randomCatImage => {
+      if (randomCatImage) {
+        catImage.src = randomCatImage;
+      }
+    });
 }
 
 window.addEventListener('load', setRandomCatImage);
@@ -36,3 +29,11 @@ window.addEventListener('load', setRandomCatImage);
 catImage.addEventListener('click', () => {
   meowSound.play();
 });
+
+// Check if the play button exists before adding an event listener
+const playButton = document.querySelector('.secret-play-button');
+if (playButton) {
+  playButton.addEventListener('click', function() {
+    audioPlayer.play();
+  });
+}
