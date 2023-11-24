@@ -1,3 +1,5 @@
+<div align="center">
+
 ![Logo](https://cdn.discordapp.com/attachments/892836872118763543/1176592565462642849/1f638.png?ex=656f6e37&is=655cf937&hm=73eeaaa502d2103eec2ca58db21ca42556985e2d4268776bff547d10f0ed2927&)
 # [🐱 PetTheCat 🐱](https://inttter.github.io/PetTheCat/)
 
@@ -13,14 +15,11 @@
 PetTheCat is a web application that provides a random image of a cat for you to enjoy and interact with by petting (clicking on) the displayed cat image to hear a meow sound!
 
 ## 📝Features 📝
-- **Random Cat Images:**
-  - Utilizing TheCatAPI (https://thecatapi.com), PetTheCat displays a randomly fetched image of a cat every time you visit the website.
+- **Random Cat Images:** Utilizing TheCatAPI (https://thecatapi.com), PetTheCat displays a randomly fetched image of a cat every time you visit the website.
 
-- **Interactivity:**
-  - By clicking on the displayed cat image, you can hear a 'meow' sound.
+**Interactivity:** - By clicking on the displayed cat image, you can hear a 'meow' sound.
 
-- **Secret Button:**
-  - Explore the page...
+**Secret Button:** - Explore the page...
 
 ## 💻 Preview 💻
 ![PetTheCat Preview](Preview.jpg)
@@ -43,3 +42,5 @@ PetTheCat is licensed under the [MIT License](LICENSE).
 ---
 ### 🍵 Buy me a Coffee! 🍵
 [![Support me on Ko-fi](https://img.shields.io/badge/Support%20me%20on-Ko--fi-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/intter)
+
+</div>
